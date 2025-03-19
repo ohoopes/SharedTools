@@ -203,7 +203,7 @@ def get_value_color_map(workbook, sheet_name, min_row, min_col, max_row=None, ma
     # Reuse the existing function to get the list of colors and dict of (column_letter, row) -> color
     colors, c_dict = get_cell_colors(workbook, sheet_name, min_row, min_col, max_row, max_col)
 
-    # Retrieve the sheet so we can look up the actual cell values
+    # Retrieve the  sheet so we can look up the actual cell values
     sheet = workbook[sheet_name]
 
     # Build a dictionary that maps cell values to color hex codes
@@ -221,11 +221,9 @@ def get_value_color_map(workbook, sheet_name, min_row, min_col, max_row=None, ma
 def plot_colored_boxes(value_color_map, cols=4, box_size=(2, 1), figname=None):
     """
     Creates a visualization of the value_color_map dictionary.
-
     Parameters
     ----------
     value_color_map
-
     """
 
     keys = list(value_color_map.keys())
@@ -259,3 +257,9 @@ def plot_colored_boxes(value_color_map, cols=4, box_size=(2, 1), figname=None):
         fig.savefig(figname)
 
     return fig, ax
+
+
+def this_is_my_function(arg1: int, arg2: str):
+    print('wow!')
+    print('thats it.')
+    
