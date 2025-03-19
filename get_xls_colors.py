@@ -220,7 +220,10 @@ def get_value_color_map(workbook, sheet_name, min_row, min_col, max_row=None, ma
 
 def plot_colored_boxes(value_color_map, cols=4, box_size=(2, 1), figname=None):
     """
-    This is a docstring. I have deleted the original one and made it useless!
+    Creates a visualization of the value_color_map dictionary.
+    Parameters
+    ----------
+    value_color_map
     """
 
     keys = list(value_color_map.keys())
